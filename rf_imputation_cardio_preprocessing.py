@@ -35,7 +35,7 @@ from sklearn.ensemble import RandomForestRegressor, RandomForestClassifier
 # -----------------------------
 
 # load user-level panel data 
-df = pd.read_csv("data/rawdata/cardio_track.csv",parse_dates=['time_stamp'])
+df = pd.read_csv("data/rawdata/cardio_track_sample.csv",parse_dates=['time_stamp'])
 
 print(df.head())
 print(df.shape)
@@ -195,7 +195,7 @@ print(df_imp[covariates_to_impute].isna().sum())
 
 # Export cleaned data
 df_imp.to_csv(
-    "data/cleaneddata/cardio_rf_imputation_processed.csv",
+    "data/cleaneddata/cardio_rf_imputation_sample.csv",
     index=False
 )
 
