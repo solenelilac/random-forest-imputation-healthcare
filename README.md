@@ -9,4 +9,4 @@ to imputing missing values in healthcare data. The pipeline handles both
 numeric and categorical covariates, imputes variables in order of
 increasing missingness, and preserves observed values to avoid data
 leakage. The implementation is reusable and can be easily adapted to
-other healthcare and tabular datasets.
+other datasets.
